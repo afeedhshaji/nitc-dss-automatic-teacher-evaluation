@@ -1,6 +1,6 @@
 # Automatic DSS Teacher Evaluator 
 
-## Instaling geckodriver for linux
+## Installing geckodriver for linux
 
 
 1. Download geckodriver(v0.26.0)
