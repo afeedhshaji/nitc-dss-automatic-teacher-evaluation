@@ -1,4 +1,4 @@
-# Automatic DSS Teacher Evaluator 
+# Automatic DSS-NIT Calicut Teacher Evaluator 
 
 ## Installing geckodriver for linux
 
