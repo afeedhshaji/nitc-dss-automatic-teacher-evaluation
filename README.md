@@ -35,7 +35,7 @@ pip3 install -r req.txt
 4. Run the python script to start the bot.
 
 ```
-python3 app.py
+python3 app.py [username] [password]
 ```
 
 
