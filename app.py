@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import sys
+
 
 class dss_bot:
     def __init__(self, username, password):
@@ -22,6 +24,12 @@ class dss_bot:
     def do_stuff(self):
         bot = self.bot
         bot.get('http://dss.nitc.ac.in/nitcreg/tlogin.aspx')
+        html= bot.find_element_by_xpath(".//html")
+
+        if ('completed' in html.text):
+            print("You've already completed the teacher evaluation")
+            sys.exit()
+            
         selects = bot.find_elements_by_id('ddlcourse')
         for select in selects:
             options = [x for x in select.find_elements_by_tag_name("option")]
@@ -56,6 +64,8 @@ class dss_bot:
 
 
 
-x = dss_bot('B170373EE', 'B170373EE') 
+x = dss_bot(sys.argv[1], sys.argv[2]) 
 x.login()
 x.do_stuff()
+
+
