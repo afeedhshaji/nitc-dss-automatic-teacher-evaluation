@@ -19,7 +19,6 @@ class dss_bot:
         email.send_keys(self.username)
         password.send_keys(self.password)
         password.send_keys(Keys.RETURN)
-        time.sleep(3)
 
     def do_stuff(self):
         bot = self.bot
