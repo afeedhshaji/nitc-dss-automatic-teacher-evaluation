@@ -73,6 +73,7 @@ class dss_bot:
                 print("\nEvaluation Complete.")
                 time.sleep(5)
                 bot.quit()
+                break
 
 x = dss_bot(sys.argv[1], sys.argv[2]) 
 x.login()
