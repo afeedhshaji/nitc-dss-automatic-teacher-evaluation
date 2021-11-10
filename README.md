@@ -38,5 +38,7 @@ pip3 install -r req.txt
 python3 app.py [username] [password]
 ```
 
+## Screenshots
+![Input Rating](/Screenshots/rating_input.png?raw=true "Rating input")
 
 
